@@ -1,0 +1,33 @@
+// Google Fonts
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+// Base Settings
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+// Body
+body {
+  height: 2000px;
+  background-image: linear-gradient(to right, #444 0%, #323638 100%);
+}
+
+// Base container
+.container {
+  max-width: 1243px;
+  margin: 0 auto;
+  @media (max-width: 1439px) {
+    max-width: 1000px;
+  }
+  @media (max-width: 1000px) {
+    width: 100%;
+  }
+}

@@ -1,0 +1,22 @@
+// Base Settings
+@import "./base";
+
+// Variables
+@import "./utils/variables";
+
+/* ------------------------------- Pages Start ------------------------------ */
+
+// Home & components
+@import "./pages/Home/home";
+@import "./pages/Home/popular-movies";
+
+/* ------------------------------- Pages End ------------------------------ */
+
+/* ------------------------------- Components Start ------------------------------ */
+
+// Header & components
+@import "./components/Header/header-top";
+@import "./components/Header/header-nav";
+@import "./components/Modal/login-modal";
+
+/* ------------------------------- Components End ------------------------------ */
