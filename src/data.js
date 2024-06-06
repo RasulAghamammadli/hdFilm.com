@@ -1,7 +1,7 @@
 export const movies = [
   {
     id: 1,
-    name: "Film 1",
+    name: "Film 1, salam salam salam",
     releaseYear: 2021,
     rating: 8.5,
     image: "https://picsum.photos/200/300?random=1",
@@ -9,7 +9,7 @@ export const movies = [
   },
   {
     id: 2,
-    name: "Film 2",
+    name: "Film 2 salam salam salam",
     releaseYear: 2020,
     rating: 7.2,
     image: "https://picsum.photos/200/300?random=2",
@@ -17,7 +17,7 @@ export const movies = [
   },
   {
     id: 3,
-    name: "Film 3",
+    name: "Film 3 salam salam salam",
     releaseYear: 2019,
     rating: 8.0,
     image: "https://picsum.photos/200/300?random=3",
