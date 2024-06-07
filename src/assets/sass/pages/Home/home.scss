@@ -2,7 +2,7 @@
 .main-content {
   .container {
     .content-row {
-      padding: 12px 20px 8px;
+      padding: 12px 14px 8px 20px;
       background-color: #0e0e0e;
       display: flex;
       justify-content: space-between;
@@ -10,3 +10,11 @@
   }
 }
 // Home End
+
+// Filter Movies start
+.filter-movies {
+  display: flex;
+  flex-direction: column;
+  width: 255px;
+}
+// Filter Movies End
