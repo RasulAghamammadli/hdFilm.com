@@ -9,6 +9,7 @@ import logo from "../../assets/icons/logo.webp";
 import { FaSearch } from "react-icons/fa";
 import { HiUserAdd } from "react-icons/hi";
 import { CgLogIn } from "react-icons/cg";
+import { BsFilterLeft } from "react-icons/bs";
 
 // Components
 import LoginModal from "../Modal/LoginModal";
@@ -52,6 +53,9 @@ const HeaderTop = () => {
         />
       </div>
       <div className="for-user">
+        <div className="btn filter-btn">
+          <BsFilterLeft className="icon" />
+        </div>
         <Link to="/register" className="btn">
           <HiUserAdd className="icon" />
           <span>Üye Ol</span>

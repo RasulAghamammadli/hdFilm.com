@@ -1,0 +1,330 @@
+// Last Added Start
+.incontent {
+  width: 933px;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 1439px) {
+    width: 690px;
+  }
+  @media (max-width: 1000px) {
+    width: 100%;
+  }
+  .title {
+    position: relative;
+    width: 100%;
+    border-bottom: 2px solid rgba(205, 194, 255, 0.1);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .head {
+      color: #fff;
+      padding-bottom: 8px;
+      padding-right: 5px;
+      border-bottom: 2px solid red;
+      margin: 0 0 -1.5px;
+      font-weight: 400;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      .icon {
+        margin-right: 4px;
+      }
+    }
+    .see-all {
+      overflow: hidden;
+      display: block;
+      color: #ccc;
+      margin-top: -7px;
+      padding: 3px 5px;
+      font-weight: 700;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      transition: all 0.1s ease-in-out;
+      &:hover {
+        color: #fff;
+      }
+      .icon {
+        margin-right: 2px;
+      }
+    }
+  }
+  .content-movies {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% + 10px);
+    .list-movie {
+      flex: 0 0 20%;
+      max-width: 20%;
+      @media (max-width: 1439px) {
+        flex: 0 0 25%;
+        max-width: 25%;
+      }
+      @media (max-width: 600px) {
+        flex: 0 0 33.3%;
+        max-width: 33.3%;
+      }
+      @media (max-width: 450px) {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+      .movie-box {
+        width: calc(100% - 10px);
+        height: 269px;
+        display: inline-block;
+        margin-bottom: 5px;
+        user-select: none;
+        overflow: hidden;
+        position: relative;
+        border-radius: 1px;
+        transition: all 0.3s ease-in-out;
+        @media (max-width: 1439px) {
+          height: 248px;
+        }
+        @media (max-width: 1000px) {
+          height: 344px;
+        }
+        @media (max-width: 850px) {
+          height: 290px;
+        }
+        @media (max-width: 750px) {
+          height: 250px;
+        }
+        @media (max-width: 650px) {
+          height: 200px;
+        }
+        @media (max-width: 600px) {
+          height: 270px;
+        }
+        @media (max-width: 550px) {
+          height: 220px;
+        }
+        @media (max-width: 500px) {
+          height: 195px;
+        }
+        @media (max-width: 450px) {
+          height: 300px;
+        }
+        @media (max-width: 420px) {
+          height: 233px;
+        }
+        &:hover {
+          .year {
+            display: none;
+          }
+          .rating {
+            display: none;
+          }
+          .poster {
+            .overlay {
+              background-color: rgb(14 14 14/58%);
+            }
+            img {
+              transform: scale(1.2);
+            }
+            .play-btn {
+              .icon {
+                transform: scale(1) rotate(0deg);
+                width: 57px;
+                height: 57px;
+                &:hover {
+                  color: #fbc607;
+                }
+              }
+            }
+          }
+          .about {
+            display: none;
+          }
+        }
+        .year {
+          z-index: 2;
+          position: absolute;
+          color: #fff;
+          font-size: 13px;
+          font-weight: 400;
+          overflow: hidden;
+          padding: 4px 6px;
+          border-radius: 5px;
+          margin-left: 5px;
+          margin-top: 5px;
+          display: flex;
+          align-items: center;
+          .icon {
+            margin-right: 3px;
+            color: #4caf50;
+          }
+        }
+        .rating {
+          z-index: 2;
+          position: absolute;
+          color: #fff;
+          right: 0;
+          margin-top: 5px;
+          margin-right: 5px;
+          padding: 4px 5px;
+          font-size: 13px;
+          font-weight: 400;
+          overflow: hidden;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          .icon {
+            font-size: 15px;
+            color: #ffd70d;
+            margin-right: 3px;
+          }
+        }
+        .poster {
+          width: 100%;
+          height: 100%;
+          display: block;
+          position: relative;
+          overflow: hidden;
+          cursor: pointer;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.28);
+          .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            z-index: 1;
+            background-image: linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 0) 50%,
+                #000 100%
+              ),
+              linear-gradient(to top, rgba(0, 0, 0, 0) 80%, #000 100%);
+            transition: all 0.3s ease-in-out;
+          }
+          img {
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            transition: all 0.3s ease-in-out;
+          }
+          .play-btn {
+            z-index: 1;
+            position: absolute;
+            display: block;
+            top: 50%;
+            left: 50%;
+            width: 100px;
+            height: 44px;
+            margin-top: -22px;
+            margin-left: -50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease-in-out;
+            .icon {
+              width: 0;
+              height: 0;
+              transform: translate(0);
+              transition: all 0.3s ease-in-out;
+              color: #fff;
+            }
+          }
+        }
+        .about {
+          user-select: none;
+          z-index: 1;
+          position: absolute;
+          width: 100%;
+          height: 49px;
+          left: 0;
+          bottom: 0;
+          padding: 0 7px 7px 7px;
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
+          font-size: 13px;
+          font-weight: 700;
+          line-height: 20px;
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
+          text-align: left;
+          text-shadow: 3px 2px 1px #000;
+          display: flex;
+          flex-direction: column;
+          .name {
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: #ffd70d;
+            font-size: 15px;
+            line-height: 25px;
+          }
+          .language {
+            display: flex;
+            align-items: center;
+            img {
+              width: 20px;
+              height: 14px;
+              margin-right: 3px;
+            }
+            .icon {
+              font-size: 19px;
+              color: #ffae0d;
+            }
+            span {
+              width: calc(100% - 61px);
+              margin-top: -2px;
+              margin-left: 4px;
+              color: #fff;
+              font-weight: 400;
+              width: calc(100% - 38px);
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+        }
+      }
+    }
+  }
+  .pagination {
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    a {
+      border: 0;
+      font-size: 12px;
+      border-radius: 2px;
+      color: #ccc;
+      font-weight: 700;
+      background-color: #232222;
+      word-break: break-word;
+      margin-right: 5px;
+      margin-bottom: 8px;
+      padding: 8px 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.1s ease-in-out;
+    }
+    .num {
+      &:hover {
+        background-color: red;
+      }
+    }
+    .arrow-btn {
+      &:hover {
+        background-color: #363636;
+      }
+    }
+    .active {
+      background-color: red;
+    }
+  }
+}
+// Last Added End

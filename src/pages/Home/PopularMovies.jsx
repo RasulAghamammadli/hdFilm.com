@@ -1,8 +1,10 @@
 // import React from 'react'
 import { useRef } from "react";
 import { Link } from "react-router-dom";
-import { movies } from "../../data";
 import Slider from "react-slick";
+
+// data
+import { movies } from "../../data";
 
 // Carousel CSS
 import "slick-carousel/slick/slick.css";
