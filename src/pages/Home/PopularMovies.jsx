@@ -73,34 +73,36 @@ const PopularMovies = () => {
         <div className="carousel-inner">
           <div className="slider-container">
             <Slider ref={(slider) => (sliderRef = slider)} {...settings}>
-              {movies.map((movie) => (
-                <div className="movie-box" key={movie.id} ref={sliderRef}>
-                  <div className="year">
-                    <FaCalendarAlt className="icon" /> {movie.releaseYear}
-                  </div>
-                  <div className="rating">
-                    <FaStar className="icon" /> {movie.rating}
-                  </div>
-                  <Link to="/" className="poster">
-                    <div className="overlay"></div>
-                    <div className="scale"></div>
-                    <img src={movie.image} alt="" />
-                    <div className="play-btn">
-                      <FaRegPlayCircle className="icon" />
+              {movies
+                .map((movie) => (
+                  <div className="movie-box" key={movie.id} ref={sliderRef}>
+                    <div className="year">
+                      <FaCalendarAlt className="icon" /> {movie.releaseYear}
                     </div>
-                  </Link>
-                  <div className="about">
-                    <Link to="/" className="name">
-                      {movie.name}
+                    <div className="rating">
+                      <FaStar className="icon" /> {movie.rating}
+                    </div>
+                    <Link to="/" className="poster">
+                      <div className="overlay"></div>
+                      <div className="scale"></div>
+                      <img src={movie.image} alt="" />
+                      <div className="play-btn">
+                        <FaRegPlayCircle className="icon" />
+                      </div>
                     </Link>
-                    <div className="language">
-                      <img src={flag} alt="" />
-                      <FaRegClosedCaptioning className="icon" />
-                      <span>Dublaj & Altyazı</span>
+                    <div className="about">
+                      <Link to="/" className="name">
+                        {movie.name}
+                      </Link>
+                      <div className="language">
+                        <img src={flag} alt="" />
+                        <FaRegClosedCaptioning className="icon" />
+                        <span>Dublaj & Altyazı</span>
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                ))
+                .slice(0, 24)}
             </Slider>
           </div>
         </div>

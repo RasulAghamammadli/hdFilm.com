@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import PopularMovies from "./PopularMovies";
 import LastAddedMovies from "./LastAddedMovies";
 import FilterMovies from "./FilterMovies";
+import HomeFooter from "../../components/Footer/HomeFooter";
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <HomeFooter />
     </>
   );
 };
