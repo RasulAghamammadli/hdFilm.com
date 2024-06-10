@@ -1,0 +1,25 @@
+// Mobile Filter Start
+.mobile-filter {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  overflow: hidden;
+  z-index: 3;
+  max-height: 0;
+  transition: max-height 0.5s ease-in-out;
+  display: none;
+  -webkit-box-shadow: 0px 22px 49px -10px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 22px 49px -10px rgba(0, 0, 0, 1);
+  box-shadow: 0px 22px 49px -10px rgba(0, 0, 0, 1);
+  @media (max-width: 1000px) {
+    display: block;
+  }
+  .filter-content {
+    padding: 15px 20px;
+    background-color: #1c1c1d;
+  }
+  &.open-mobile-filter {
+    max-height: 935px;
+  }
+}
+// Mobile Filter End

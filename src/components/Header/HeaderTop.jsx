@@ -13,13 +13,22 @@ import { BsFilterLeft } from "react-icons/bs";
 
 // Components
 import LoginModal from "../Modal/LoginModal";
+import MobileFilter from "../Filter/MobileFilter";
 
 const HeaderTop = () => {
   // Modal
   const [open, setOpen] = useState(false);
 
+  // Filter
+  const [filterOpen, setFilterOpen] = useState(false);
+
+  // toggle Modal
   const toggleModal = () => {
     setOpen(!open);
+  };
+
+  const openMobileFilter = () => {
+    setFilterOpen(!filterOpen);
   };
 
   // preventScroll
@@ -53,7 +62,7 @@ const HeaderTop = () => {
         />
       </div>
       <div className="for-user">
-        <div className="btn filter-btn">
+        <div className="btn filter-btn" onClick={openMobileFilter}>
           <BsFilterLeft className="icon" />
         </div>
         <Link to="/register" className="btn">
@@ -65,6 +74,9 @@ const HeaderTop = () => {
           <span>Üye Girişi</span>
         </Link>
       </div>
+
+      {/* Mobile Filter */}
+      <MobileFilter filterOpen={filterOpen} setFilterOpen={setFilterOpen} />
 
       {/* Modal */}
       <LoginModal isOpen={open} onClose={toggleModal} />

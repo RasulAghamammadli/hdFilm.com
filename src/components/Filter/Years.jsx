@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 // Icons
 import { FaCalendarAlt } from "react-icons/fa";
 
-const Years = () => {
+const Years = (setFilterOpen) => {
   // Years Arr
   const years = [];
   for (let year = 1969; year <= 2024; year++) {
@@ -22,7 +22,9 @@ const Years = () => {
       <ul className="list">
         {years.reverse().map((item) => (
           <li key={item} className="list-item">
-            <Link to={item}>{item}</Link>
+            <Link to={item} onClick={() => setFilterOpen(false)}>
+              {item}
+            </Link>
           </li>
         ))}
       </ul>

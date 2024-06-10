@@ -7,7 +7,7 @@ import { categories } from "../../categoryData.js";
 // Icons
 import { FaBars } from "react-icons/fa";
 
-const Categories = () => {
+const Categories = (setFilterOpen) => {
   return (
     <div className="categories">
       <div className="title">
@@ -19,7 +19,9 @@ const Categories = () => {
       <ul className="list">
         {categories.map((item) => (
           <li key={item} className="list-item">
-            <Link to={item}>{item}</Link>
+            <Link to={item} onClick={() => setFilterOpen(false)}>
+              {item}
+            </Link>
           </li>
         ))}
       </ul>
