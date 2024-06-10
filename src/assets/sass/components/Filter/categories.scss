@@ -1,0 +1,55 @@
+// Categories Start
+.categories {
+  width: 100%;
+  min-height: auto;
+  margin-bottom: 20px;
+  .title {
+    position: relative;
+    width: 100%;
+    border-bottom: 2px solid rgba(205, 194, 255, 0.1);
+    margin-bottom: 13px;
+    .head {
+      width: fit-content;
+      color: #fff;
+      padding-bottom: 8px;
+      padding-right: 5px;
+      border-bottom: 2px solid red;
+      margin: 0 0 -1.5px;
+      font-weight: 400;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      .icon {
+        font-size: 16px;
+        margin-right: 4px;
+      }
+    }
+  }
+  .list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .list-item {
+      width: 50%;
+      a {
+        display: block;
+        font-size: 15px;
+        font-weight: 400;
+        color: #ccc;
+        background-color: #0a0a0a;
+        border-radius: 3px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 7px 12px;
+        margin: 1px;
+        transition: all 0.1s ease-in-out;
+        &:hover {
+          background-color: red;
+        }
+      }
+    }
+  }
+}
+// Categories End
