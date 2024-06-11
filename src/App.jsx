@@ -4,11 +4,11 @@ import { useEffect, useState } from "react";
 
 // Pages
 import Home from "./pages/Home/Home";
+import MobilApp from "./pages/MobilApp/MobilApp";
 
 // Components
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import Salam from "./pages/HelekiBos/Salam";
 
 const App = () => {
   // Path location
@@ -30,7 +30,7 @@ const App = () => {
       <main>
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/salam" element={<Salam />} />
+          <Route exact path="/mobil-app" element={<MobilApp />} />
         </Routes>
       </main>
       {showFooter && <Footer />}
