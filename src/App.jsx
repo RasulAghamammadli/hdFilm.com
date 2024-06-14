@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 // Pages
 import Home from "./pages/Home/Home";
 import MobilApp from "./pages/MobilApp/MobilApp";
+import Contact from "./pages/Contact/Contact";
 
 // Components
 import Header from "./components/Header/Header";
@@ -31,6 +32,7 @@ const App = () => {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/mobil-app" element={<MobilApp />} />
+          <Route exact path="/contact" element={<Contact />} />
         </Routes>
       </main>
       {showFooter && <Footer />}

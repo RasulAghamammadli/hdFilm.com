@@ -50,7 +50,7 @@ const HeaderNav = () => {
             </Link>
           </li>
           <li>
-            <Link to="/" className="list-item">
+            <Link to="/contact" className="list-item">
               İletişim
             </Link>
           </li>
@@ -100,7 +100,7 @@ const HeaderNav = () => {
             </Link>
           </li>
           <li onClick={() => setMenuOpen(false)}>
-            <Link to="/" className="list-item">
+            <Link to="//contact" className="list-item">
               İletişim
             </Link>
           </li>

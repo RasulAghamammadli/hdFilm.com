@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="content">
             <Link to="/">film izle</Link>
             <Link to="/">film izle</Link>
-            <Link to={"item"}>{"path"}</Link>
+            <Link to={"item"}></Link>
             <div className="copyright">
               Copyright © 2024
               <Link to="/">HDFilmcehennemi | Film izle | HD Film izle</Link>
