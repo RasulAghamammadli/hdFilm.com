@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import Home from "./pages/Home/Home";
 import MobilApp from "./pages/MobilApp/MobilApp";
 import Contact from "./pages/Contact/Contact";
+import Register from "./pages/Register/Register";
 
 // Components
 import Header from "./components/Header/Header";
@@ -33,6 +34,7 @@ const App = () => {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/mobil-app" element={<MobilApp />} />
           <Route exact path="/contact" element={<Contact />} />
+          <Route exact path="/register" element={<Register />} />
         </Routes>
       </main>
       {showFooter && <Footer />}

@@ -48,7 +48,7 @@ const HeaderTop = () => {
 
   return (
     <div className="header-top" onScroll={handleScroll}>
-      <Link to="/" className="logo">
+      <Link to="/" className="logo" onClick={() => setFilterOpen(false)}>
         <img src={logo} alt="" />
       </Link>
       <div className="search">
@@ -65,7 +65,11 @@ const HeaderTop = () => {
         <div className="btn filter-btn" onClick={openMobileFilter}>
           <BsFilterLeft className="icon" />
         </div>
-        <Link to="/register" className="btn">
+        <Link
+          to="/register"
+          className="btn"
+          onClick={() => setFilterOpen(false)}
+        >
           <HiUserAdd className="icon" />
           <span>Üye Ol</span>
         </Link>

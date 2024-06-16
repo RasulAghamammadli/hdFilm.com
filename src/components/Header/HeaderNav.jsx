@@ -25,7 +25,7 @@ const HeaderNav = () => {
             </Link>
           </li>
           <li>
-            <Link to="/salam" className="list-item">
+            <Link to="/" className="list-item">
               Türkçe Dublaj Filmler
             </Link>
           </li>
@@ -75,7 +75,7 @@ const HeaderNav = () => {
         <div className="blur-nav"></div>
         <ul className="list">
           <li onClick={() => setMenuOpen(false)}>
-            <Link to="/salam" className="list-item">
+            <Link to="/" className="list-item">
               Türkçe Dublaj Filmler
             </Link>
           </li>
@@ -100,7 +100,7 @@ const HeaderNav = () => {
             </Link>
           </li>
           <li onClick={() => setMenuOpen(false)}>
-            <Link to="//contact" className="list-item">
+            <Link to="/contact" className="list-item">
               İletişim
             </Link>
           </li>

@@ -1,0 +1,110 @@
+// Register Start
+.register {
+  .container {
+    .register-content {
+      padding: 20px;
+      background-color: #0e0e0e;
+      .title {
+        position: relative;
+        width: 100%;
+        border-bottom: 2px solid rgba(205, 194, 255, 0.1);
+        margin-bottom: 14px;
+        .head {
+          width: fit-content;
+          color: #fff;
+          padding-bottom: 8px;
+          padding-right: 5px;
+          border-bottom: 2px solid red;
+          margin: 0 0 -1.5px;
+          font-weight: 400;
+          font-size: 16px;
+          display: flex;
+          align-items: center;
+          .icon {
+            font-size: 25px;
+            margin-right: 2px;
+          }
+        }
+      }
+      .register-form {
+        margin-top: 20px;
+        form {
+          position: relative;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          .success {
+            width: 100%;
+            top: 0;
+            background: #bdffca;
+            color: #006515;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 3px;
+            font-size: 16px;
+          }
+          .form-group {
+            position: relative;
+            margin-bottom: 20px;
+            width: 100%;
+            .input {
+              outline: none;
+              display: block;
+              color: #fff;
+              background-color: transparent;
+              border-radius: 2px;
+              width: 100%;
+              height: 38px;
+              font-size: 14px;
+              line-height: 1.3;
+              padding: 6px 10px;
+              border: 1px solid rgba(205, 194, 255, 0.1);
+              transition: all 0.2s ease-in-out;
+              &.err-border {
+                border: 1px solid #490b0b;
+              }
+              &:focus {
+                border: 1px solid #521b1b;
+              }
+              &::placeholder {
+                color: #ccc;
+              }
+              @media (max-width: 1000px) {
+                height: 35px;
+              }
+            }
+            .error {
+              position: absolute;
+              top: 38px;
+              left: 5px;
+              color: rgb(220, 0, 0);
+              font-size: 11px;
+              @media (max-width: 1000px) {
+                top: 35px;
+              }
+            }
+          }
+          button {
+            outline: none;
+            margin-top: 10px;
+            cursor: pointer;
+            border: 0;
+            background: red;
+            font-size: 14px;
+            font-weight: 400;
+            padding: 10px 15px;
+            border-radius: 2px;
+            width: 100%;
+            color: #fff;
+            transition: all 0.1s ease-in-out;
+            &:hover {
+              background: #c00;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// Register End
