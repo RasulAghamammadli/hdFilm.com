@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 
 // Pages
 import Home from "./pages/Home/Home";
+import MovieIn from "./pages/MovieIn/MovieIn";
 import MobilApp from "./pages/MobilApp/MobilApp";
 import Contact from "./pages/Contact/Contact";
 import Register from "./pages/Register/Register";
@@ -32,6 +33,7 @@ const App = () => {
       <main>
         <Routes>
           <Route exact path="/" element={<Home />} />
+          <Route exact path="/movie-in" element={<MovieIn />} />
           <Route exact path="/mobil-app" element={<MobilApp />} />
           <Route exact path="/contact" element={<Contact />} />
           <Route exact path="/register" element={<Register />} />

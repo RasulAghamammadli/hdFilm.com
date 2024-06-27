@@ -1,0 +1,26 @@
+// Movie In Start
+.movie-in {
+  .container {
+    .movie-content {
+      padding: 12px 14px 8px 20px;
+      background-color: #0e0e0e;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+// Movie In End
+
+// Movie Side Start
+.movie-side {
+  width: 933px;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 1439px) {
+    width: 690px;
+  }
+  @media (max-width: 1000px) {
+    width: 100%;
+  }
+}
+// Movie Side End

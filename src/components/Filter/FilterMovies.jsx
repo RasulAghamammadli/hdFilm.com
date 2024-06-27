@@ -1,9 +1,9 @@
 // import React from 'react'
 
 // Components
-import Categories from "../../components/Filter/Categories";
-import MovieRobot from "../../components/Filter/MovieRobot";
-import Years from "../../components/Filter/Years";
+import Categories from "./Categories";
+import MovieRobot from "./MovieRobot";
+import Years from "./Years";
 
 const FilterMovies = () => {
   return (

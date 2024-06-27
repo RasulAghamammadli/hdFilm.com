@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 // Components
 import PopularMovies from "./PopularMovies";
 import LastAddedMovies from "./LastAddedMovies";
-import FilterMovies from "./FilterMovies";
+import FilterMovies from "../../components/Filter/FilterMovies";
 import HomeFooter from "../../components/Footer/HomeFooter";
 
 const Home = () => {
