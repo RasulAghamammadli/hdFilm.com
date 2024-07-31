@@ -45,6 +45,3 @@ const App = () => {
 };
 
 export default App;
-
-
-// Qedir
