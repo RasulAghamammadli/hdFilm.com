@@ -7,10 +7,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   .head {
     display: flex;
     justify-content: space-between;
     width: 100%;
+
     .head-text {
       color: #fff;
       padding-bottom: 8px;
@@ -21,10 +23,12 @@
       font-size: 16px;
       display: flex;
       align-items: center;
+
       .icon {
         margin-right: 4px;
       }
     }
+
     .head-text-right {
       color: #ffffffcc;
       padding-bottom: 8px;
@@ -36,6 +40,7 @@
       align-items: center;
     }
   }
+
   .movie-name {
     display: inline-block;
     color: rgba(255, 255, 255, 0.8);
@@ -45,14 +50,16 @@
 }
 
 // Video top
-
 .video-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 20px;
+
   @media (max-width:1000px) {
     display: block;
   }
+
   h4 {
     display: inline-block;
     background: #bf1d1d;
@@ -62,16 +69,19 @@
     font-weight: 400;
     color: #fff;
     cursor: default;
+
     &:hover {
       background: red;
     }
+
     @media (max-width:1000px) {
-    margin-bottom: 10px;
-  }
+      margin-bottom: 10px;
+    }
   }
 
   .manage-video {
     display: flex;
+
     button {
       display: flex;
       align-items: center;
@@ -82,14 +92,161 @@
       border: 0;
       border-radius: 5px;
       background-color: rgb(156 30 30 / 45%);
+
       &:nth-child(2) {
         margin: 0 4px;
       }
+
       .manage-video-icon {
         margin-right: 4px;
       }
+
       &:hover {
         background: #794242;
+      }
+    }
+  }
+}
+
+// Share
+.video-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 46px;
+  margin-top: -7px;
+  padding: 0 10px;
+  background-color: #171717;
+
+  .video-bottom-left {
+    display: flex;
+    align-items: center;
+
+    .share-left {
+      display: flex;
+      align-items: center;
+
+      p {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 18px;
+        color: #fff;
+      }
+
+      .share-icon {
+        margin-left: 3px;
+        color: #fff;
+      }
+    }
+
+    .share-right {
+      display: flex;
+      align-items: center;
+      margin-left: 10px;
+
+      .social {
+        display: flex;
+        align-items: center;
+        padding: 3px 10px;
+        border-radius: 2px;
+        cursor: pointer;
+        color: #fff;
+
+        a {
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 18px;
+          color: #fff;
+        }
+
+        &:nth-child(1) {
+          background: #3b5999;
+
+          &:hover {
+            background: #304b84;
+          }
+        }
+
+        &:nth-child(2) {
+          background: #55acee;
+          margin: 0 5px;
+
+          &:hover {
+            background: #4489bd;
+          }
+
+          a {
+            margin-left: 3px;
+          }
+        }
+
+        &:nth-child(3) {
+          background: #25d366;
+
+          &:hover {
+            background: #1da04d;
+          }
+
+          a {
+            margin-left: 3px;
+          }
+        }
+      }
+    }
+  }
+
+  .video-bottom-right {
+    display: flex;
+    align-items: center;
+
+    .like {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      background: rgb(66 64 64 / 35%);
+      padding: 0 10px;
+      border-radius: 3px;
+      border-bottom: 2px solid green;
+      color: #ffffffcc;
+      margin-right: 5px;
+
+      button {
+        outline: 0;
+        border: 0;
+        color: #ffffffcc;
+        background: none;
+        margin-top: 4px;
+        margin-left: 3px;
+        cursor: pointer;
+      }
+
+      &:hover{
+        background: green;
+      }
+    }
+
+    .dislike {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      background: rgb(66 64 64 / 35%);
+      padding: 2px 10px;
+      border-radius: 3px;
+      border-bottom: 2px solid red;
+      color: #ffffffcc;
+      cursor: pointer;
+
+      button {
+        outline: 0;
+        border: 0;
+        color: #ffffffcc;
+        background: none;
+        cursor: pointer;
+        margin-left: 3px;
+      }
+
+      &:hover{
+        background: red;
       }
     }
   }
